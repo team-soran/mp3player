@@ -1,4 +1,3 @@
-<html>
   <head>
     <title>Hello World</title>
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -9,6 +8,21 @@
   <body>
     Hello World!
     <input type="file" webkitdirectory directory multiple mozdirectory
-           id="dir" onchange="listing(this.files)" />
+           id="dir" onchange="readFiles(this.files)" />
+    <audio controls id="player">
+    </audio>
+
+    <table border="1">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>가수</th>
+          <th>제목</th>
+          <th>앨범</th>
+        </tr>
+      </thead>
+      <tbody id="mp3-list">
+      </tbody>
+    </table>
   </body>
 </html>
